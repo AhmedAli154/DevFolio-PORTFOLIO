@@ -1,0 +1,457 @@
+:root{
+  --light-color: #ccc2c2  ;
+  --blue-color:#0078FF     ;
+  --blue-light:#CDE1F8;
+  --blue-opacity:#acd0ff;
+}
+body{
+  background-color:#F8F9FA;
+
+}
+
+/* s t a r t   header  s e c t i o n */
+
+#HOME{
+  background-image:url("../photo/hero-bg.jpg");
+  background-size:cover;
+  background-position: center ;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -2;
+
+}
+#HOME::after{
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0%;
+  bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index:-1;
+}
+#HOME h1{
+  z-index: 1;
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: 500;
+  top: -5px;
+}
+#HOME h2{
+  z-index: 2;
+}
+#HOME h2::after{
+  content: "|";
+animation-name:typing ;
+animation-duration: 15s ;
+animation-iteration-count:infinite ;
+}
+
+@keyframes typing{
+  0%{ content: "D|"}
+  1%{ content: "De|"}
+  2%{ content: "Dev|"}
+  3%{ content: "Devl|"}
+  4%{ content: "Devlo|"}
+  5%{ content: "Devlob|"}
+  6%{ content: "Devlobe|"}
+  7%{ content: "Devlober|"}
+  10%{content: "Devlober"}
+  12%{content: "Devlober|"}
+  15%{content: "Devlober"}
+  18%{content: "Devlober|"}
+  21%{content: "Devlober"}
+  23%{content: "Devlober|"}
+  24%{content: "Devlobe|"}
+  26%{content: "Devlob|"}
+  28%{content: "Devlo|"}
+  30%{content: "Dev|"}
+  32%{content: "De|"}
+  36%{content: "D|"}
+  38%{content: "|"}
+
+  40%{ content: "p|"}
+  41%{ content: "Ph|"}
+  42%{ content: "pho|"}
+  43%{ content: "photog|"}
+  44%{ content: "photogr|"}
+  45%{ content: "photogra|"}
+  46%{ content: "photogrp|"}
+  47%{ content: "photogrph|"}
+  48%{ content: "photogrphe|"}
+  48%{ content: "photogrpher|"}
+  51%{ content: "photogrpher"}
+  53%{ content: "photogrpher|"}
+  56%{ content: "photogrpher"}
+  59%{ content: "photogrpher|"}
+
+  60%{ content: "photogrphe|"}
+  61%{ content: "photogrph|"}
+  62%{ content: "photogrp|"}
+  63%{ content: "photogrp|"}
+  64%{ content: "photogr|"}
+  65%{ content: "photog|"}
+  66%{ content: "photo|"}
+  67%{ content: "phot|"}
+  68%{ content: "pho|"}
+  69%{ content: "ph|"}
+  70%{ content: "ph|"}
+  71%{ content: "p|"}
+  72%{ content: "|"}
+
+  74%{ content: "D|"}
+  75%{ content: "De|"}
+  76%{ content: "Des|"}
+  77%{ content: "Desi|"}
+  78%{ content: "Desig|"}
+  79%{ content: "Design|"}
+  80%{ content: "Designe|"}
+  81%{ content: "Desiger|"}
+  83%{ content: "Desiger"}
+  86%{ content: "Desiger|"}
+  89%{ content: "Desiger"}
+  91%{ content: "Desiger|"}
+
+  92%{ content: "Desige|"}
+  93%{ content: "Desige|"}
+  95%{ content: "Desig|"}
+  96%{ content: "Desi|"}
+  97%{ content: "Des|"}
+  98%{ content: "De|"}
+  99%{ content: "D|"}
+  100%{ content: "|"}   
+}
+
+nav.dropdown-item.active, nav.dropdown-item:active{
+background-color: white;
+color: white;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: white;
+}
+.navbar{
+background-color: rgba(0, 0, 0, 0.8);
+}
+.nav-link {
+  color: white;
+}
+.navbar .navbar-nav  a ,.navbar .navbar-nav .nav-link  a{
+  position: relative;
+}
+ .navbar .navbar-nav .nav-item   a::after , .nav-link   .afteeer::after,.dropdown-toggle::after  {
+  content: "";
+  width: 0;
+  height: 0.1rem;
+  bottom: 0;
+left:8px;
+  position: absolute;
+background-color: white;
+transition: 0.5s;
+border: none;
+}
+.navbar .navbar-nav  li:hover   a::after , .nav-link li:hover .afteeer::after{
+  width: 80%;
+
+}
+.afteeer{
+  position:relative;
+}
+.dropdown{
+  position: relative;
+}
+
+li .deeeep a{
+  text-decoration: none;
+}
+/* end  header  s e c t i o n */
+
+/* s t a r t   a b o u t    s e c t i o n  */
+#ABOUT span{
+  color: rgb(16, 16, 16);
+  font-size:1.3rem ;
+}
+.progress{
+  border-radius: 0;
+}
+#ABOUT div .h2::before{
+content: "";
+width: 6rem;
+height: 0.2rem;
+background-color: var(--blue-color);
+position: absolute;
+bottom: -8px;
+}
+/* e n d   a b o u t   s e c t i o n  */
+
+/* s t a r t     S E R V I C E S    s e c t i o n */
+#SERVICES .serv-head p::after{
+content: "";
+width: 2.8rem;
+height: 0.3rem;
+background-color: var(--blue-color);
+position: absolute;
+bottom: -20px;
+left: 48%;
+}
+.icon1{
+  width: 7rem;
+  height: 7rem;
+ transition: 0.5s all; 
+background-color: var(--blue-color);
+}
+
+.icon-parent{
+  width: 6rem;
+  height: 6rem;
+border-radius: 50%;  
+  background-color: white;
+  transition: 0.5s all; 
+
+}
+
+.item:hover  .icon-parent{
+    background-color: var(--blue-color);
+}
+.item:hover  .icon1{  
+    background-color: var(--blue-opacity);
+
+
+}
+#SERVICES i{
+  font-size: 40px;
+}
+
+/* e n d      S E R V I C E S    s e c t i o n */ 
+
+/* s t a r t    t i m e r    s e c t i o n */ 
+.overlay{
+  background-image: url(../photo/post-3.jpg);
+  background-size:auto;
+position: relative;
+background-attachment:fixed;
+background-position: center ;
+position: relative;
+z-index: -2;
+}
+.containe{
+  position: relative;
+}
+.overlay::after{
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--blue-color);
+  opacity: 0.7;
+  z-index: -1;
+position: absolute;
+}
+.countre-box {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.overlay .circle{
+ 
+  width: 5rem;
+height:5rem;
+  border: solid 10px  #CDE1F8 ;
+position: relative;
+}
+.overlay i {
+  font-size: 30px;
+  position: absolute;
+}
+/* e n d      t i m e r    s e c t i o n */ 
+/* s t a r t   P O R T F O L I O   s e c t i o n  */
+.portof-head p::after{
+  content: "";
+width: 3rem;
+height: 0.4rem;
+background-color: var(--blue-color);
+position: absolute;
+/* top: 0; */
+bottom:  30px;  
+left: 50%;
+translate: -20px; ;
+}
+.card img{
+    transition: 1.5s all;
+
+}
+.col{
+  overflow: hidden;
+}
+.work-img{
+  overflow: hidden;
+}
+.card-img{
+  overflow: hidden;
+}
+#PORTFOLIO .card:hover  img{
+transform: scale(1.5) ;
+}
+.card-body span{
+  color: #0078FF;
+}
+#PORTFOLIO .card{
+  border-radius: 0;
+  border: none;
+  margin-bottom: 2rem;
+}
+small{
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #0078FF;
+  border: 2px solid var(--blue-color);
+border-radius: 50%;
+font-size: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+small i{
+  font-size: 1.5rem;
+  color: var(--blue-color);
+}
+/* e n d   P O R T F O L I O   s e c t i o n  */
+/* s t a r t    s c r o l l     s e c t i o n */ 
+.overlay-scrol{
+  background-image: url(../photo/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+.overlay-scrol::after{
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background-color: var(--blue-color);
+  opacity: 0.7;
+  z-index: 1;
+}
+#carouselExampleIndicators{
+  z-index: 2;
+  color: white;
+}
+.slide-1 img {
+  width: 150px;
+  height: 150px;
+ border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target] {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+}
+/* e n d     s c r o l l     s e c t i o n */ 
+.blog-head p::after{
+  content: "";
+width: 3rem;
+height: 0.4rem;
+background-color: var(--blue-color);
+position: absolute;
+bottom:  0px;  
+left: 50%;
+translate: -20px; ;
+}
+.fote-img{
+  width: 32px;
+height: 32px;
+margin-right: 4px;
+}
+.card-footer h4{
+  color: black;
+}
+#BLOG .card-category{
+border-radius: 5px;
+padding: 0 10px 0px 10px;
+overflow: hidden;
+}
+#BLOG .badge{
+  font-size: 10px;
+}
+
+.overlay2{
+  background-image: url(../photo/overlay-bg.jpg);
+background-attachment: fixed;
+background-position: center;
+position: relative;
+z-index: 0;
+
+}
+.overlay2::after{
+content: "";
+background-color: var(--blue-color);
+opacity: 0.7;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+position: absolute;
+z-index: 1;
+}
+.overlay2 .container{
+  z-index:2 ;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+.ssss{
+position: relative;
+}
+.ss{color: #0062D3;}
+.icon-fot-hov{
+width: 3rem;
+height: 3rem;
+border: solid 3px var(--blue-color);
+transition: 1s all;
+
+} 
+.icon-1{
+  width:2.5rem ;
+  height: 2.5rem;
+  transition: 1s all;
+background-color: white;
+}
+.icon-footer:hover  .icon-1 {
+background-color: var(--blue-color);}
+.icon-footer:hover  .icon-fot-hov {
+background-color: var(--blue-light);  
+border: solid 3px var(--blue-light);}
+  #CONTACT .icon-1 i{
+  font-size: 20px;
+}
+#CONTACT input   {
+  border-radius: 0;
+}
+#CONTACT button{
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.after-bo::after{
+  content: "";
+  width: 6rem;
+  height:0.2rem ; 
+  background-color: #0062D3;
+position: absolute;
+left: 0;
+top:110%;
+}
+.mb-55::after{
+  content: "";
+  width: 6rem;
+  height:0.2rem ; 
+  background-color: #0062D3;
+position: absolute;
+left: 0;
+top:110%;
+}
+.footer2{
+  background-color: #0062D3;
+}
